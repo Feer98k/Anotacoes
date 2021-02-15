@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formulario_Fundo"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Overdraw">
+    <TextView
+        android:id="@+id/formulario_nota_data_edicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="04/Fev/2020 00:10"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_margin="8dp"/>
+
+    <EditText
+        android:id="@+id/formulario_nota_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/title"
+        android:importantForAutofill="no"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/formulario_nota_data_edicao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/formulario_nota_descricao"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="@string/description"
+        android:importantForAutofill="no"
+        android:textSize="24sp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/formulario_nota_titulo"
+        app:layout_constraintStart_toStartOf="@id/formulario_nota_titulo"
+        app:layout_constraintTop_toBottomOf="@id/formulario_nota_titulo"
+        tools:ignore="TextFields" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/formulario_nota_adicionar_FAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_baseline_check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:id="@+id/formulario_nota_grade"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+
+        />
+
+
+    <Button
+        android:id="@+id/formulario_nota_botao_bold"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/font_bold"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/formulario_nota_grade"
+        app:layout_constraintEnd_toEndOf="@id/formulario_nota_grade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/formulario_nota_grade"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:id="@+id/formulario_nota_botao_bold_select"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_margin="8dp"
+        android:background="@color/CINZA_SELECT"
+        android:scaleType="centerCrop"
+        android:src="@drawable/font_bold"
+        app:layout_constraintBottom_toBottomOf="@id/formulario_nota_grade"
+        app:layout_constraintEnd_toEndOf="@id/formulario_nota_grade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/formulario_nota_grade"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/formulario_nota_botao_italico"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/font_italic"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/formulario_nota_grade"
+        app:layout_constraintEnd_toEndOf="@id/formulario_nota_grade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/formulario_nota_botao_bold"
+        app:layout_constraintTop_toTopOf="@id/formulario_nota_grade"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="invisible"
+        />
+
+    <ImageButton
+        android:id="@+id/formulario_nota_botao_italico_select"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_margin="8dp"
+        android:background="@color/CINZA_SELECT"
+        android:scaleType="centerCrop"
+        android:src="@drawable/font_italic"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/formulario_nota_grade"
+        app:layout_constraintEnd_toEndOf="@id/formulario_nota_grade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/formulario_nota_botao_bold"
+        app:layout_constraintTop_toTopOf="@id/formulario_nota_grade"
+        app:layout_constraintVertical_bias="0.0"
+        />
+    <Button
+        android:id="@+id/formulario_nota_botao_cor_fonte"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/font_color_dois"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/formulario_nota_grade"
+        app:layout_constraintEnd_toEndOf="@id/formulario_nota_grade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/formulario_nota_botao_italico"
+        app:layout_constraintTop_toTopOf="@id/formulario_nota_grade"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="invisible"
+        />
+        <TextView
+            android:id="@+id/formulario_nota_icon_color_font"
+            android:layout_width="31.5dp"
+            android:layout_height="3.5dp"
+            app:layout_constraintStart_toStartOf="@id/formulario_nota_botao_cor_fonte"
+            android:background="@drawable/item_cor_fonte"
+            android:backgroundTint="@color/black"
+            app:layout_constraintTop_toTopOf="@id/formulario_nota_botao_cor_fonte"
+            app:layout_constraintEnd_toEndOf="@id/formulario_nota_botao_cor_fonte"
+            app:layout_constraintBottom_toBottomOf="@id/formulario_nota_botao_cor_fonte"
+            app:layout_constraintVertical_bias="0.85"
+            app:layout_constraintHorizontal_bias="0.4"
+            android:visibility="invisible"
+
+            />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/formulario_nota_lista_notas_cores_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/formulario_nota_grade"
+        app:layout_constraintEnd_toEndOf="@id/formulario_nota_grade"
+        app:layout_constraintTop_toBottomOf="@id/formulario_nota_botao_bold"
+        app:layout_constraintVertical_bias="1.0"
+        tools:listitem="@layout/item_cores"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

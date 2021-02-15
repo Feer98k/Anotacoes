@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Anotações</string>
+    <string name="inserir_uma_nota">Inserir uma note</string>
+    <string name="description">Descrição</string>
+    <string name="title">Título</string>
+    <string name="menu_lista_linear">menu_lista_linear</string>
+    <string name="menu_lista_grid">menu_lista_grid</string>
+    <string name="insira_uma_subtarefa">Insira uma Sub-Tarefa</string>
+
+
+</resources>
