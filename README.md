@@ -11,7 +11,7 @@ Algumas tecnologias implementada:
 - Persistência de dados com Room SqLite
 - SharedPreferences
 # Demo: 
-https://www.youtube.com/watch?v=rvtOFv_dcZw&feature=youtu.be
+https://www.youtube.com/watch?v=6lZOCTEFDFA&feature=youtu.be
 # Requisitos mínimos ao usuário :
  - OS Android 4.1 (API LEVEL 16) Jelly Beans
 	
