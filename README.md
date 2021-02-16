@@ -10,7 +10,8 @@ Algumas tecnologias implementada:
 - RecyclerView e adapters 
 - Persistência de dados com Room SqLite
 - SharedPreferences
-
+# Demo: 
+https://www.youtube.com/watch?v=rvtOFv_dcZw&feature=youtu.be
 # Requisitos mínimos ao usuário :
  - OS Android 4.1 (API LEVEL 16) Jelly Beans
 	
