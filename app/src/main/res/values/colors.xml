@@ -17,7 +17,7 @@
     <color name="MARROM">#FFA47C48</color>
     <color name="ROXO">#FFBE29EC</color>
     <color name="CINZA_LIGHT">#D3D3D3</color>
-    <color name="CINZA_SELECT">#878880</color>
+    <color name="GRAY_ENABLED">#878880</color>
     <color name="AZUL_TEMA">#46B4EB</color>
     <color name="ITEM_CHECKED">#C6C6C6</color>
 

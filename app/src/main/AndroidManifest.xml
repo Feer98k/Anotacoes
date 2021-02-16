@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.anotacoes"
         tools:ignore="AllowBackup">
-        <activity android:name="com.projeto.anotacoes.classes.ui.activity.TarefaFormulario"></activity>
-        <activity android:name="com.projeto.anotacoes.classes.ui.activity.TarefaObjetivos" />
+        <activity android:name="com.project.annotations.classes.ui.activity.TaskForm"></activity>
+        <activity android:name="com.project.annotations.classes.ui.activity.TaskList" />
         <activity
-            android:name="com.projeto.anotacoes.classes.ui.activity.SplashScreen"
+            android:name="com.project.annotations.classes.ui.activity.SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +24,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.projeto.anotacoes.classes.ui.activity.NotesForm"
+            android:name="com.project.annotations.classes.ui.activity.NotesForm"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name="com.projeto.anotacoes.classes.ui.activity.NotesList" />
+        <activity android:name="com.project.annotations.classes.ui.activity.NotesList" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -1,11 +1,20 @@
 <resources>
     <string name="app_name">Anotações</string>
-    <string name="inserir_uma_nota">Inserir uma note</string>
     <string name="description">Descrição</string>
     <string name="title">Título</string>
     <string name="menu_lista_linear">menu_lista_linear</string>
     <string name="menu_lista_grid">menu_lista_grid</string>
-    <string name="insira_uma_subtarefa">Insira uma Sub-Tarefa</string>
+    <string name="string_insert_new_SubTask">Insira uma Sub-Tarefa</string>
+    <string name="a_button_of_italic_style_text">a button of italic styleText</string>
+    <string name="a_button_of_bold_style_text">a button of bold styleText</string>
+    <string name="a_floating_action_button_to_add_note">a floating action button to add note</string>
+    <string name="title_field">Titulo</string>
+    <string name="string_dell">A button to dell SubTasks</string>
+    <string name="string_add">a button to add new Note</string>
+    <string name="string_btn_list_notes">A button to enter at List of notes activity</string>
+    <string name="string_btn_list_tasks">A button to enter list of tasks activity</string>
+    <string name="sub_task">Sub - task</string>
+    <string name="a_button_to_edit_an_task">a button to edit an task</string>
 
 
 </resources>

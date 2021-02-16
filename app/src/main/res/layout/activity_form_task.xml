@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.annotations.classes.ui.activity.TaskForm">
+
+    <EditText
+        android:id="@+id/form_task_title_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/title_field"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_title_editText"
+
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_1"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_1" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_1" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_2"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_2" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_2"
+        app:layout_constraintVertical_bias="0.0"
+
+        />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_2" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_3"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_3" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_3" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_4"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_4" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_4" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_5"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_5" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_5" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_6"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_6" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_6" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_7"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_7" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_7" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_8"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_8" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_8"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_8" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_9"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_9" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_9" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_10"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_10" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_10"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_10" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_11"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_11"
+
+        />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_11"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/form_task_subTask_editText_12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="@string/string_insert_new_SubTask"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:maxLength="104"
+        android:maxLines="4"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@id/form_task_dell_button_12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/form_task_subTask_editText_11" />
+
+    <ImageButton
+        android:id="@+id/form_task_dell_button_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_dell"
+        android:src="@drawable/ic_delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/form_task_add_button_12"
+        app:layout_constraintEnd_toStartOf="@id/form_task_add_button_12" />
+
+    <ImageButton
+        android:id="@+id/form_task_add_button_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24_black"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/form_task_subTask_editText_12"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.annotations.classes.ui.activity.TaskList">
+
+    <TextView
+        android:id="@+id/task_list_grade_textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/tasks_list_btn_list_tasks_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="2dp"
+        android:contentDescription="@string/string_btn_list_notes"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_post_it"
+        app:layout_constraintBottom_toBottomOf="@id/task_list_grade_textView"
+        app:layout_constraintEnd_toEndOf="@id/task_list_grade_textView"
+        app:layout_constraintHorizontal_bias="0.40"
+        app:layout_constraintStart_toStartOf="@id/task_list_grade_textView"
+        app:layout_constraintTop_toTopOf="@id/task_list_grade_textView" />
+
+    <ImageButton
+        android:id="@+id/notes_list_list_tasks_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="2dp"
+        android:contentDescription="@string/string_btn_list_tasks"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_to_do"
+        app:layout_constraintBottom_toBottomOf="@id/task_list_grade_textView"
+        app:layout_constraintEnd_toEndOf="@id/task_list_grade_textView"
+        app:layout_constraintHorizontal_bias="0.60"
+        app:layout_constraintStart_toStartOf="@id/task_list_grade_textView"
+        app:layout_constraintTop_toTopOf="@id/task_list_grade_textView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasks_list_recyclerView_tasks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/task_list_grade_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_task" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/tasks_list_add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/string_add"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

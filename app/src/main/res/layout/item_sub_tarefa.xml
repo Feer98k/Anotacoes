@@ -1,9 +1,7 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/item_subTarefa_textView"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:text="Sub - tarefa"
     android:textSize="18sp"
-   />
+    tools:text="Sub - task" />
 
