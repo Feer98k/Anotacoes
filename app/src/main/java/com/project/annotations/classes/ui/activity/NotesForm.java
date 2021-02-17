@@ -5,6 +5,7 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -299,6 +300,7 @@ public class NotesForm extends AppCompatActivity implements OnKeyboardVisibility
         noteDAO = Database.getInstance(this).getNotaDataDao();
         titleEditField = findViewById(R.id.form_note_title_editText);
         descriptionEditField = findViewById(R.id.form_note_description_editText);
+        descriptionEditField.setMovementMethod(new ScrollingMovementMethod());
         gradeFunctionsFieldView = findViewById(R.id.form_note_grade_textView);
         rootLayout = findViewById(R.id.form_note_constraint_layout);
         recyclerViewBackground = findViewById(R.id.form_note_colors_background_note_recyclerView);
