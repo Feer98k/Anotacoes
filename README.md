@@ -4,13 +4,8 @@ Este projeto teve como base um aplicativo anterior chamado Ceep que também pode
 
 Em breve este aplicativo terá a funcionalidade de guardar anotações de áudio.
 # ScreenShots 
-![splashScreen](https://user-images.githubusercontent.com/70384260/108745109-7a372a80-7519-11eb-9913-668e159787dd.jpeg)
-![mainActivity](https://user-images.githubusercontent.com/70384260/108745152-86bb8300-7519-11eb-9f26-4ca47d3f1500.jpeg)
-![novaNota](https://user-images.githubusercontent.com/70384260/108745194-90dd8180-7519-11eb-84d8-967823e35316.jpeg)
-![editaNota](https://user-images.githubusercontent.com/70384260/108745217-9935bc80-7519-11eb-838d-19abd8a7c447.jpeg)
-![Nota](https://user-images.githubusercontent.com/70384260/108745265-a357bb00-7519-11eb-8077-f5f42e8722f8.jpeg)
-![Tarefas](https://user-images.githubusercontent.com/70384260/108745293-ace12300-7519-11eb-92af-ca6e753646bd.jpeg)
-![EditaTarefas](https://user-images.githubusercontent.com/70384260/108745330-b4a0c780-7519-11eb-9d22-f3520a3457ec.jpeg)
+<img src="screenshots/mainActivity.jpg" width ="100" >
+![](screenshots/mainActivity.jpg)
 
 
 
