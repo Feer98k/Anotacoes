@@ -4,8 +4,8 @@ Este projeto teve como base um aplicativo anterior chamado Ceep que também pode
 
 Em breve este aplicativo terá a funcionalidade de guardar anotações de áudio.
 # ScreenShots 
-<img src="screenshots/mainActivity.jpg" width ="100" >
-![](screenshots/mainActivity.jpg)
+<img src="screenshots/mainActivity.jpeg" width ="100" >
+
 
 
 
