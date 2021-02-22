@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,6 +57,10 @@ public class NotesList extends AppCompatActivity {
         checkPreferenceLayout();
         onItemNoteClick();
         btnForm();
+        /**
+         * Todo
+         *  View decorView = getWindow().getDecorView();
+          */
     }
 
 
