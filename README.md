@@ -7,7 +7,7 @@ Em breve este aplicativo terá a funcionalidade de guardar anotações de áudio
 
 <img src="screenshots/splashScreen.jpeg" width ="150" ><img src="screenshots/mainActivity.jpeg" width ="150" ><img src="screenshots/novaNota.jpeg" width ="150" >
 
-<img src="screenshots/Nota.jpeg" width ="150" ><img src="screenshots/editaNota.jpeg" width ="150" ><img src="screenshots/Tarefas.jpegg" width ="150" >
+<img src="screenshots/Nota.jpeg" width ="150" ><img src="screenshots/editaNota.jpeg" width ="150" ><img src="screenshots/Tarefas.jpeg" width ="150" >
 
 <img src="screenshots/EditaTarefas.jpeg" width ="150" >
 
